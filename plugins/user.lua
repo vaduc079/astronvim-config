@@ -53,4 +53,10 @@ return {
     build = function() vim.fn["mkdp#util#install"]() end,
     ft = "markdown",
   },
+  {
+    "m-demare/hlargs.nvim",
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    config = function() require("hlargs").setup {} end,
+    event = "LspAttach",
+  },
 }
