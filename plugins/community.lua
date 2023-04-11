@@ -16,4 +16,5 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.python" },
 }
