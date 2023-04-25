@@ -56,7 +56,12 @@ return {
   {
     "m-demare/hlargs.nvim",
     dependencies = { "nvim-treesitter/nvim-treesitter" },
-    config = function() require("hlargs").setup {} end,
+    config = function()
+      require("hlargs").setup {
+        color = '#ef6262'
+      }
+    end,
     event = "LspAttach",
   },
+  { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' }
 }
