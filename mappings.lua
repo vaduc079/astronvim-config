@@ -1,3 +1,8 @@
+local sections = {
+  t = { desc = "󱂬 Tabs" },
+  -- T = { desc = " Terminal" },
+}
+
 -- Mapping data with "desc" stored directly by vim.keymap.set().
 --
 -- Please use this mappings table to set keyboard mapping since this is the
@@ -9,14 +14,14 @@ return {
     -- second key is the lefthand side of the map
 
     -- navigate buffer tabs with `H` and `L`
-    -- L = {
-    --   function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
-    --   desc = "Next buffer",
-    -- },
-    -- H = {
-    --   function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
-    --   desc = "Previous buffer",
-    -- },
+    L = {
+      function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+      desc = "Next buffer",
+    },
+    H = {
+      function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+      desc = "Previous buffer",
+    },
 
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
@@ -32,6 +37,42 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- Move text up and down
+    ["<A-j>"] = { ":m .+1<CR>==", desc = "Move text down" },
+    ["<A-k>"] = { ":m .-2<CR>==", desc = "Move text up" },
+
+    -- TABS --
+    ["<leader>t"] = sections.t,
+    ["<leader>ta"] = { "<cmd>tabnew<cr>", desc = "New tab" },
+    ["<leader>tc"] = { "<cmd>tabclose<cr>", desc = "Close tab" },
+    ["<leader>tn"] = { "<cmd>tabnext<cr>", desc = "Next tab" },
+    ["<leader>tp"] = { "<cmd>tabprevious<cr>", desc = "Previous tab" },
+    ["<leader>tv"] = false,
+    ["<leader>tl"] = false,
+    ["<leader>tf"] = false,
+    ["<leader>th"] = false,
+    -- Diffview
+    ["<leader>td"] = { "<cmd>DiffviewOpen<cr>", desc = "Diffview" },
+    ["<leader>tdo"] = { "<cmd>DiffviewOpen<cr>", desc = "Open Diffview" },
+    ["<leader>tdh"] = { "<cmd>DiffviewFileHistory<cr>", desc = "Open Git history of current file" },
+    ["<leader>tdr"] = { "<cmd>DiffviewRefresh<cr>", desc = "Refresh Diffview" },
+
+    -- GIT --
+    ["<leader>gB"] = { "<cmd>:GitBlameToggle<cr>", desc = "Toggle inline blame" },
+  },
+  v = {
+    -- Don't copy highlighted text when pasting
+    p = { '"_dp' },
+
+    -- Move text up and down
+    ["<A-j>"] = { ":m .+1<CR>==", desc = "Move text down" },
+    ["<A-k>"] = { ":m .-2<CR>==", desc = "Move text up" },
+  },
+  x = {
+    -- Move text up and down
+    ["<A-j>"] = { ":move '>+1<CR>gv-gv", desc = "Move text down" },
+    ["<A-k>"] = { ":move '<-2<CR>gv-gv", desc = "Move text up" },
   },
   t = {
     -- setting a mapping to false will disable it
