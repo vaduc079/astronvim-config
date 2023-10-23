@@ -15,14 +15,14 @@ return {
 
   -- EDITOR --
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
-  -- { import = "astrocommunity.debugging.nvim-bqf" },
+  { import = "astrocommunity.debugging.nvim-bqf" },
 
   -- MOTION --
   -- { import = "astrocommunity.motion.mini-ai" },
   -- { import = "astrocommunity.motion.mini-move" },
 
   -- PROJECT --
-  -- { import = "astrocommunity.project.project-nvim" },
+  { import = "astrocommunity.project.project-nvim" },
 
   -- GIT --
   { import = "astrocommunity.git.diffview-nvim" }, -- Maybe just install these plugins by yourself?

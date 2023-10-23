@@ -60,6 +60,8 @@ return {
 
     -- GIT --
     ["<leader>gB"] = { "<cmd>:GitBlameToggle<cr>", desc = "Toggle inline blame" },
+
+    ["<leader>fp"] = { "<cmd>Telescope projects<cr>", desc = "Find projects" },
   },
   v = {
     -- Don't copy highlighted text when pasting
