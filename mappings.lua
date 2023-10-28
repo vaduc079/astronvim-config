@@ -61,6 +61,14 @@ return {
     -- GIT --
     ["<leader>gB"] = { "<cmd>:GitBlameToggle<cr>", desc = "Toggle inline blame" },
 
+    -- TOGGLERTERM --
+    ["[<F7>]"] = { "<cmd>ToggleTerm direction=horizontal<cr>", desc = "Toggle terminal" },
+    ["<C-'>"] = { "<cmd>ToggleTerm direction=horizontal<cr>", desc = "Toggle terminal" },
+    ["2<C-'>"] = { "<cmd>2ToggleTerm direction=horizontal<cr>", desc = "Open second terminals" },
+    ["3<C-'>"] = { "<cmd>3ToggleTerm direction=horizontal<cr>", desc = "Open third terminals" },
+    ["4<C-'>"] = { "<cmd>4ToggleTerm direction=horizontal<cr>", desc = "Open fourth terminals" },
+
+    -- PROJECTS --
     ["<leader>fp"] = { "<cmd>Telescope projects<cr>", desc = "Find projects" },
   },
   v = {
@@ -79,5 +87,12 @@ return {
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+
+    -- TOGGLERTERM --
+    -- Leave TERMINAL mode
+    -- ["<esc>"] = { "<C-\\><C-n>" },
+    ["2<C-'>"] = { "<cmd>2ToggleTerm direction=horizontal<cr>", desc = "Open second terminals" },
+    ["3<C-'>"] = { "<cmd>3ToggleTerm direction=horizontal<cr>", desc = "Open third terminals" },
+    ["4<C-'>"] = { "<cmd>4ToggleTerm direction=horizontal<cr>", desc = "Open fourth terminals" },
   },
 }
