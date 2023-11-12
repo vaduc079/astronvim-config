@@ -70,6 +70,17 @@ return {
 
     -- PROJECTS --
     ["<leader>fp"] = { "<cmd>Telescope projects<cr>", desc = "Find projects" },
+
+    -- Trouble --
+    ["<leader>x"] = { desc = "Trouble" },
+    ["<leader>xd"] = { "<cmd>TroubleToggle document_diagnostics<cr>", desc = "Toggle document diagnostics" },
+    ["<leader>xw"] = { "<cmd>TroubleToggle workspace_diagnostics<cr>", desc = "Toggle workspace diagnostics" },
+    ["<leader>xq"] = { "<cmd>TroubleToggle quickfix<cr>", desc = "Toggle quickfix" },
+    -- TroubleToggle lsp_*
+    -- TroubleToggle loclist
+    -- TroubleToggle telescope
+
+    ["<leader>n"] = false,
   },
   v = {
     -- Don't copy highlighted text when pasting
