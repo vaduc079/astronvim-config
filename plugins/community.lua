@@ -6,8 +6,9 @@ return {
 
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 
-  -- LANGUAGES--
+  -- LANGUAGES --
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.markdown" },
@@ -16,6 +17,7 @@ return {
   -- EDITOR --
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.debugging.nvim-bqf" },
+  { import = "astrocommunity.lsp.lsp-signature-nvim" },
 
   -- MOTION --
   -- { import = "astrocommunity.motion.mini-ai" },
