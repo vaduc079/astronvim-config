@@ -55,7 +55,8 @@ return {
     -- Diffview
     ["<leader>td"] = { "<cmd>DiffviewOpen<cr>", desc = "Diffview" },
     ["<leader>tdo"] = { "<cmd>DiffviewOpen<cr>", desc = "Open Diffview" },
-    ["<leader>tdh"] = { "<cmd>DiffviewFileHistory<cr>", desc = "Open Git history of current file" },
+    ["<leader>tdh"] = { "<cmd>DiffviewFileHistory<cr>", desc = "Open current branch Git History" },
+    ["<leader>tdH"] = { "<cmd>DiffviewFileHistory %<cr>", desc = "Open current file Git History" },
     ["<leader>tdr"] = { "<cmd>DiffviewRefresh<cr>", desc = "Refresh Diffview" },
 
     -- GIT --
