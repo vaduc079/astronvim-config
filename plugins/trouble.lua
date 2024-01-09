@@ -8,4 +8,5 @@ return {
     --   cancel = "<c-c>",
     -- },
   },
+  event = "VeryLazy",
 }
