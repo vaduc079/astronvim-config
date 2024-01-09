@@ -6,6 +6,7 @@ return {
       "html",
       "css",
       "yaml",
+      "graphql",
     })
   end,
 }

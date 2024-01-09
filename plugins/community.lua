@@ -13,6 +13,8 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.terraform" },
+  { import = "astrocommunity.pack.docker" },
 
   -- EDITOR --
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
