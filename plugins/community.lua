@@ -8,6 +8,7 @@ return {
 
   -- LANGUAGES --
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.json" },
@@ -15,6 +16,7 @@ return {
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.terraform" },
   { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.python-ruff" },
 
   -- EDITOR --
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
